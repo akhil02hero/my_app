@@ -1,0 +1,138 @@
+.WaterLevelTracker {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.waterlevel {
+  height: 500px;
+  width: 250px;
+  background-color: white;
+  border: 1px solid rgb(123, 100, 100);
+  border-radius: 100px 100px 50px 50px;
+  position: relative;
+  overflow: hidden;
+}
+.waterlevel::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  bottom: 0;
+  left: 10%;
+}
+
+.bottle-cap {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottlecap {
+  width: 100px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    orange,
+    transparent 10px,
+    rgb(196, 114, 114) 10px,
+    rgb(232, 142, 142) 20px
+  );
+}
+
+.water {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(61, 164, 216);
+  bottom: 0;
+  transition: all 1s ease-in-out;
+}
+
+.water-message {
+  text-align: center;
+  width: 30ch;
+  margin-bottom: 30px;
+}
+
+.water-error-message {
+  font-size: 12px;
+  color: red;
+}
+
+.custom-input {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-style: none;
+  outline: none;
+  padding: 0.8em 1em;
+  border: 0.25em solid transparent;
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 1.8em;
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-out;
+}
+
+.custom-label {
+  position: relative;
+  left: 13em;
+  bottom: 2em;
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  letter-spacing: 0.1em;
+  color: #ccd;
+  color: rgba(255, 220, 255, 0.6);
+  cursor: pointer;
+  background: #000;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.iconposition {
+  position: relative;
+  top: 10px;
+  font-size: 40px;
+}
+
+.callout-info {
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .iconposition {
+    position: relative;
+    top: -50px;
+    left: 225px;
+    font-size: 30px;
+  }
+
+  .custom-input {
+    width: 100%;
+  }
+
+  .custom-label {
+    position: relative;
+    top: 20px;
+    left: 55px;
+  }
+}

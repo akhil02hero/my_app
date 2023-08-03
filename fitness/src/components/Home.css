@@ -1,0 +1,78 @@
+.dumbbell-fall {
+  position: relative;
+}
+
+.dumbbell-fall > img {
+  position: absolute;
+  top: 20px;
+  animation: fall 3s ease infinite;
+}
+
+.home-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #f97316;
+  --tw-gradient-to: rgb(249 115 22 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #eab308;
+  background-clip: text;
+  color: #0000;
+  -webkit-background-clip: text;
+}
+
+.image-equipment-container > img {
+  width: 316px;
+  aspect-ratio: 1;
+}
+
+.image-equipment-container {
+  position: absolute;
+  right: 15%;
+  top: 100px;
+}
+
+.equipment {
+  position: relative;
+
+  animation: equipment-fall 3s ease 1;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .image-equipment-container {
+    position: absolute;
+    left: 20%;
+    top: 385px;
+  }
+  .equipment {
+    position: relative;
+    animation: none;
+  }
+}
+
+@keyframes equipment-fall {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(600px);
+  }
+}
