@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/my_app/static/css/main.35b55c2e.css",
+    "main.js": "/my_app/static/js/main.85e0bb78.js",
+    "static/css/708.2063d764.chunk.css": "/my_app/static/css/708.2063d764.chunk.css",
+    "static/js/708.0c52a496.chunk.js": "/my_app/static/js/708.0c52a496.chunk.js",
+    "static/js/866.b5771cb0.chunk.js": "/my_app/static/js/866.b5771cb0.chunk.js",
+    "static/js/787.ec6b3678.chunk.js": "/my_app/static/js/787.ec6b3678.chunk.js",
+    "static/js/533.4b921537.chunk.js": "/my_app/static/js/533.4b921537.chunk.js",
+    "static/media/dumbbell.png": "/my_app/static/media/dumbbell.1afaf5f8e50392000a1c.png",
+    "static/media/calculator.png": "/my_app/static/media/calculator.2edaefce94b0aa5a093f.png",
+    "static/media/equipment.png": "/my_app/static/media/equipment.d8109b7e3c4409c3f7a0.png",
+    "static/media/Spinner.svg": "/my_app/static/media/Spinner.12b798c693e4f0ddd302de5e40cbaf8c.svg",
+    "index.html": "/my_app/index.html",
+    "main.35b55c2e.css.map": "/my_app/static/css/main.35b55c2e.css.map",
+    "main.85e0bb78.js.map": "/my_app/static/js/main.85e0bb78.js.map",
+    "708.2063d764.chunk.css.map": "/my_app/static/css/708.2063d764.chunk.css.map",
+    "708.0c52a496.chunk.js.map": "/my_app/static/js/708.0c52a496.chunk.js.map",
+    "866.b5771cb0.chunk.js.map": "/my_app/static/js/866.b5771cb0.chunk.js.map",
+    "787.ec6b3678.chunk.js.map": "/my_app/static/js/787.ec6b3678.chunk.js.map",
+    "533.4b921537.chunk.js.map": "/my_app/static/js/533.4b921537.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35b55c2e.css",
+    "static/js/main.85e0bb78.js"
+  ]
+}
