@@ -7,9 +7,9 @@ import Calculator from "../images/calculator.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <Link to="/">Logo</Link>
+    <nav className="navbar ">
+      <div className="logo ">
+        <Link to="/">My Fitness</Link>
       </div>
       <ul className="nav-links">
         <div className="shaking-house">

@@ -1,0 +1,12 @@
+<div className="dumbbell-fall">
+        <img
+          style={{
+            width: "64px",
+            aspectRatio: 1,
+          }}
+          src={dumbbell}
+          alt="Dumbbell"
+        />
+</div> 
+
+import dumbbell from "../images/dumbbell.png";

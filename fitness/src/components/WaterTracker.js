@@ -6,6 +6,7 @@ import {
   faPen,
   faCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import WaterTrackerDetail from "./WaterTrackerDetail";
 
 const WaterTracker = () => {
   const [waterData, setWaterData] = useState([]);
@@ -130,54 +131,17 @@ const WaterTracker = () => {
       <p> This is Water Section</p>
 
       {waterData.length > 0 ? (
-        waterData.map((element) => (
-          <div
-            className="callout-info alert alert-danger alert-dismissible fade show container text-center"
-            key={element.id}
-          >
-            <div className="row">
-              <div className="col">
-                Time: <span>{element.time}</span>
-              </div>
-              <div className="col">
-                Date: <span>{element.date}</span>
-              </div>
-              <div className="col">
-                Water Consumed:{" "}
-                {editableElementId & (id === element.id) ? (
-                  <input
-                    type="number"
-                    value={element.water}
-                    onChange={(e) =>
-                      handleWaterChange(element.id, e.target.value)
-                    }
-                  />
-                ) : (
-                  <span>{element.water}</span>
-                )}
-                {editableElementId & (id === element.id) ? (
-                  <>
-                    <FontAwesomeIcon
-                      icon={faCheck}
-                      style={{
-                        color: "#fff",
-                        marginLeft: "20px",
-                        fontSize: "20px",
-                      }}
-                      onClick={() => handleEditClick(element.id, false)}
-                    />
-                  </>
-                ) : (
-                  <></>
-                )}
-                <FontAwesomeIcon
-                  icon={faPen}
-                  style={{ color: "#fff", marginLeft: "20px" }}
-                  onClick={() => handleEditClick(element.id, true)}
-                />
-              </div>
-            </div>
-          </div>
+        waterData.map((water) => (
+          <WaterTrackerDetail
+            faCheck={faCheck}
+            faPen={faPen}
+            waterData={waterData}
+            id={id}
+            water={water}
+            editableElementId={editableElementId}
+            handleWaterChange={handleWaterChange}
+            handleEditClick={handleEditClick}
+          ></WaterTrackerDetail>
         ))
       ) : (
         <p className="callout-info alert alert-info alert-dismissible fade show container text-center">

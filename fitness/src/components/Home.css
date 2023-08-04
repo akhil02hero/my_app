@@ -12,7 +12,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  padding: 100px;
+  padding: 178px 290px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -27,23 +27,50 @@
   background-clip: text;
   color: #0000;
   -webkit-background-clip: text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-two {
+  margin-top: 28px;
+  width: 541px;
+  height: 75px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-three {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.huge-text {
+  margin-top: 77px;
+  width: 920px;
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .image-equipment-container > img {
-  width: 316px;
+  width: 280px;
   aspect-ratio: 1;
-}
-
-.image-equipment-container {
-  position: absolute;
-  right: 15%;
-  top: 100px;
 }
 
 .equipment {
   position: relative;
-
-  animation: equipment-fall 3s ease 1;
 }
 
 @media only screen and (max-width: 600px) {

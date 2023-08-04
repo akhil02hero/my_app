@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:wght@200&family=Roboto+Slab:wght@700&display=swap");
-
 .navbar {
   display: flex;
-  justify-content: space-between;
+  gap: 141px;
+  flex-direction: column;
+  height: 79px;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #6eccaf;
+  color: #344d67;
   padding: 20px 100px;
 }
 
@@ -17,27 +20,28 @@
   font-family: "Montserrat", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto Slab", serif;
-  font-weight: 900;
-  font-size: 26px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   cursor: pointer;
 }
 
 .nav-links {
   list-style: none;
-  width: 80%;
   display: flex;
+  width: 80%;
   align-items: center;
+  margin-top: 5px;
   justify-content: space-around;
 }
 
 .nav-links li {
-  margin-right: 20px;
   cursor: pointer;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
