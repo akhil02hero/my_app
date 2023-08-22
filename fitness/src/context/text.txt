@@ -1,0 +1,21 @@
+<div className="dumbbell-fall">
+        <img
+          style={{
+            width: "64px",
+            aspectRatio: 1,
+          }}
+          src={dumbbell}
+          alt="Dumbbell"
+        />
+</div> 
+
+import dumbbell from "../images/dumbbell.png";
+
+https://getcssscan.com/css-buttons-examples
+
+
+--text: #ece8ed;
+--background: #130f14;
+--primary: #41513d;
+--secondary: #161217;
+--accent: #708c69;

@@ -38,7 +38,7 @@ const BmiCalculator = () => {
     <div>
       <h2>BMI Calculator</h2>
       <form>
-        <div>
+        <div className="radio-container">
           <label>
             <input
               type="radio"

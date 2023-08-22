@@ -1,0 +1,8 @@
+.bmr-button-container {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.open {
+  display: flex;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./WaterTracker.css";
+import "../assets/css/WaterTracker.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleRight,
